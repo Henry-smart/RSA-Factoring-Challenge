@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Module that factorize as many numbers as possible
- into a product of two smaller numbers."""
+into a product of two smaller numbers."""
 from sys import argv
 
 
@@ -10,13 +10,14 @@ def factorize(value):
 
     if value < 2:
         return
-    print()
-    print(value, "<- value-bef")
+    # print()
+    # print(value, "<- value-bef")
     while value % i:
         i += 1
     print("{:.0f}={:.0f}*{:.0f}".format(value, value / i, i))
-    print(value, "<- value-aft")
-    print()
+    # print(value, "<- value-aft")
+    # print()
+
 
 if len(argv) != 2:
     exit()
